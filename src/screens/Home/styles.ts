@@ -1,60 +1,72 @@
-import {StyleSheet} from 'react-native'
+import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#131016',
+    backgroundColor: "#131016",
     padding: 24,
   },
 
-  eventName: { 
-    color: '#FFF',
+  eventName: {
+    color: "#FFF",
     fontSize: 24,
-    fontWeight: 'bold',
+    fontWeight: "bold",
     marginTop: 18,
   },
 
+  eventIconName: {
+    flexDirection: "row",
+    alignItems: "flex-end",
+    gap: 7,
+  },
+
+  eventIconDate: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+  },
+
   eventDate: {
-    color: '#FFF',
+    color: "#FFF",
     fontSize: 16,
-    marginTop: 2
+    marginTop: 2,
   },
 
   input: {
     flex: 1,
     height: 56,
-    backgroundColor: '#1F1E25',
+    backgroundColor: "#1F1E25",
     borderRadius: 5,
-    color: '#FFF',
+    color: "#FFF",
     padding: 16,
     fontSize: 22,
     marginRight: 12,
   },
 
   button: {
-   width: 56,
-   height: 56,
-   borderRadius: 5,
-   backgroundColor: '#31CF67',
-   alignItems: 'center',
-   justifyContent: 'center',
+    width: 56,
+    height: 56,
+    borderRadius: 5,
+    backgroundColor: "#31CF67",
+    alignItems: "center",
+    justifyContent: "center",
   },
 
   buttonText: {
-    color: '#FFF',
+    color: "#FFF",
     fontSize: 24,
   },
 
   form: {
-    width: '100%',
-    flexDirection: 'row',
+    width: "100%",
+    flexDirection: "row",
     marginTop: 36,
     marginBottom: 42,
   },
 
   listEmptyText: {
-   color: '#FFF',
-   fontSize: 14,
-   textAlign: 'center',
+    color: "#FFF",
+    fontSize: 14,
+    textAlign: "center",
   },
-})
+});
