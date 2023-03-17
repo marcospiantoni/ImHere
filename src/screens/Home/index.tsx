@@ -14,8 +14,6 @@ export function Home() {
     }
       setParticipants(prevState => [...prevState, participantName])
       setParticipantName('')
-
-    console.log('Você adicionou um participante!')
   }
 
   function handleParticipanRemove(name: string) {
@@ -29,19 +27,21 @@ export function Home() {
         style: 'cancel'
       }
     ])
-    console.log(`Você removeu um participante ${name}!`)
   }
 
   return (
    <View style={styles.container}>
-     <Text style={styles.eventName}> 
-       Nome do Evento 
-     </Text>
-
-     <Text style={styles.eventDate}>
-        Sexta, 4 de Novembro de 2023 
-     </Text>
-   
+    <TextInput
+       style={styles.eventName}
+       placeholder='Nome do evento' 
+       placeholderTextColor='#FFF'
+    />
+  
+    <TextInput 
+      placeholder='Data e hora do evento' 
+      style={styles.eventDate}
+      placeholderTextColor='#FFF'
+    />   
     <View style={styles.form}>
      <TextInput 
       style={styles.input}

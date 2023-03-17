@@ -11,12 +11,13 @@ export const styles = StyleSheet.create({
     color: '#FFF',
     fontSize: 24,
     fontWeight: 'bold',
-    marginTop: 48,
+    marginTop: 18,
   },
 
   eventDate: {
-    color: '#6B6B6B',
+    color: '#FFF',
     fontSize: 16,
+    marginTop: 2
   },
 
   input: {
